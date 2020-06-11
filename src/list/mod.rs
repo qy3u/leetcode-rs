@@ -1,3 +1,4 @@
+mod remove_nth_node_from_end_of_list;
 mod swap_nodes_in_pairs;
 
 #[derive(Debug)]
@@ -13,4 +14,5 @@ impl ListNode {
     }
 }
 
+pub use remove_nth_node_from_end_of_list::remove_nth_from_end;
 pub use swap_nodes_in_pairs::swap_pairs;
