@@ -7,3 +7,15 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+
+# 1. 原题目
+
+# 2. 自己的第一遍解法
+
+# 3. 网上好的解法
+
+# 4. 自己可以改进的地方
+
+# 5. 进一步精简优化自己的代码直至代码简无可简（这是非常关键的一步，到达这一步，才会发现获得能力的提升远远要超过简单地把题目解出来）
+
+# 6. 获得的思考（或者学习到的地方，可以是算法、数据结构或者Java的特性—例如Stream等等）
