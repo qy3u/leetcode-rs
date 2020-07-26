@@ -24,45 +24,45 @@
 
 // 2. my solution
 //
-pub fn search(nums: Vec<i32>, target: i32) -> i32 {
-    let pivot = find_pivot(&nums).unwrap_or(nums.len());
+// pub fn search(nums: Vec<i32>, target: i32) -> i32 {
+//     let pivot = find_pivot(&nums).unwrap_or(nums.len());
 
-    if let Ok(pos) = nums[0..pivot].binary_search(&target) {
-        return pos as i32;
-    }
-    if let Ok(pos) = nums[pivot..nums.len()].binary_search(&target) {
-        return (pivot + pos) as i32;
-    }
-    -1
-}
+//     if let Ok(pos) = nums[0..pivot].binary_search(&target) {
+//         return pos as i32;
+//     }
+//     if let Ok(pos) = nums[pivot..nums.len()].binary_search(&target) {
+//         return (pivot + pos) as i32;
+//     }
+//     -1
+// }
 
-fn find_pivot(nums: &[i32]) -> Option<usize> {
-    if nums.len() <= 1 || nums[0] < nums[nums.len() - 1] {
-        return None;
-    }
+// fn find_pivot(nums: &[i32]) -> Option<usize> {
+//     if nums.len() <= 1 || nums[0] < nums[nums.len() - 1] {
+//         return None;
+//     }
 
-    let mut left = 0;
-    let mut right = nums.len() - 1;
+//     let mut left = 0;
+//     let mut right = nums.len() - 1;
 
-    while left < right {
-        let mid = left + (right - left) / 2;
+//     while left < right {
+//         let mid = left + (right - left) / 2;
 
-        if left > 0 && nums[left] < nums[left - 1] {
-            return Some(left);
-        } else if nums[right] < nums[right - 1] {
-            return Some(right);
-        } else if nums[mid] < nums[mid - 1] {
-            return Some(mid);
-        } else if nums[mid] > nums[right] {
-            left = mid + 1;
-        } else if nums[mid] < nums[left] {
-            right = mid - 1;
-        } else {
-            unreachable!("");
-        }
-    }
-    None
-}
+//         if left > 0 && nums[left] < nums[left - 1] {
+//             return Some(left);
+//         } else if nums[right] < nums[right - 1] {
+//             return Some(right);
+//         } else if nums[mid] < nums[mid - 1] {
+//             return Some(mid);
+//         } else if nums[mid] > nums[right] {
+//             left = mid + 1;
+//         } else if nums[mid] < nums[left] {
+//             right = mid - 1;
+//         } else {
+//             unreachable!("");
+//         }
+//     }
+//     None
+// }
 
 // 3. others solution
 //
