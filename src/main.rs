@@ -6,4 +6,7 @@ mod math;
 mod search;
 mod string;
 
-fn main() {}
+fn main() {
+}
+
+
