@@ -1,4 +1,5 @@
 mod coin_change;
+mod counting_bits;
 mod jump_game;
 mod longest_continuous_increasing_subsequence;
 mod maximum_product_subarray;
@@ -7,6 +8,7 @@ mod unique_path;
 mod unique_path_ii;
 
 pub use coin_change::coin_change;
+pub use counting_bits::count_bits;
 pub use jump_game::can_jump;
 pub use longest_continuous_increasing_subsequence::find_length_of_lcis;
 pub use maximum_product_subarray::max_product;
