@@ -1,5 +1,3 @@
-
-
 // question 198
 pub fn rob(nums: Vec<i32>) -> i32 {
     if nums.is_empty() {
