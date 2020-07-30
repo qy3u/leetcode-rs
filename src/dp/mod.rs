@@ -1,3 +1,4 @@
+mod climbing_stairs;
 mod coin_change;
 mod counting_bits;
 mod jump_game;
@@ -7,6 +8,7 @@ mod min_path_sum;
 mod unique_path;
 mod unique_path_ii;
 
+pub use climbing_stairs::climb_stairs;
 pub use coin_change::coin_change;
 pub use counting_bits::count_bits;
 pub use jump_game::can_jump;
