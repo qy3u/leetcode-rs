@@ -1,13 +1,3 @@
-// #![feature(box_patterns)]
-mod array;
-mod dp;
-mod list;
-mod math;
-mod search;
-mod string;
-
-fn main() {}
-
 // question 191
 pub fn hammingWeight(n: u32) -> i32 {
     if n == 0 {
