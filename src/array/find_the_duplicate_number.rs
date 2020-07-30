@@ -1,15 +1,3 @@
-// #![feature(box_patterns)]
-mod array;
-mod dp;
-mod list;
-mod math;
-mod search;
-mod string;
-
-fn main() {
-    println!("{}", find_duplicate(vec![1, 1]));
-}
-
 // question 287
 pub fn find_duplicate(nums: Vec<i32>) -> i32 {
     let n = nums.len() - 1;
