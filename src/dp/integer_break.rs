@@ -1,4 +1,3 @@
-
 // question 343
 pub fn integer_break(n: i32) -> i32 {
     assert!(n >= 2);
@@ -24,3 +23,25 @@ pub fn integer_break(n: i32) -> i32 {
 
     dp[n]
 }
+
+// 贪心
+// pub fn integer_break(n: i32) -> i32 {
+//     if n == 2 {
+//         return 1;
+//     }
+
+//     if n == 3 {
+//         return 2;
+//     }
+
+//     let i = n / 3;
+//     let m = n % 3;
+
+//     if m == 0 {
+//         3i32.pow(i as u32)
+//     } else if m == 1 {
+//         3i32.pow((i - 1) as u32) * 4
+//     } else {
+//         3i32.pow(i as u32) * m
+//     }
+// }
