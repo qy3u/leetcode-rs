@@ -142,54 +142,54 @@
 
 // 5. improve again
 //
-// pub fn exist(board: Vec<Vec<char>>, word: String) -> bool {
-//     if word.len() == 0 {
-//         return true;
-//     }
+pub fn exist(board: Vec<Vec<char>>, word: String) -> bool {
+    if word.len() == 0 {
+        return true;
+    }
 
-//     if board.len() == 0 {
-//         return false;
-//     }
+    if board.len() == 0 {
+        return false;
+    }
 
-//     if board[0].len() == 0 {
-//         return false;
-//     }
+    if board[0].len() == 0 {
+        return false;
+    }
 
-//     let mut board = board;
-//     let words: Vec<char> = word.chars().collect();
-//     for row in 0..board.len() {
-//         for col in 0..board[0].len() {
-//             if exists_helper(&mut board, &words, row as isize, col as isize) {
-//                 return true;
-//             }
-//         }
-//     }
-//     false
-// }
+    let mut board = board;
+    let words: Vec<char> = word.chars().collect();
+    for row in 0..board.len() {
+        for col in 0..board[0].len() {
+            if exists_helper(&mut board, &words, row as isize, col as isize) {
+                return true;
+            }
+        }
+    }
+    false
+}
 
-// fn exists_helper(board: &mut Vec<Vec<char>>, words: &[char], row: isize, col: isize) -> bool {
-//     if words.len() == 0 {
-//         return true;
-//     }
+fn exists_helper(board: &mut Vec<Vec<char>>, words: &[char], row: isize, col: isize) -> bool {
+    if words.len() == 0 {
+        return true;
+    }
 
-//     if row as usize >= board.len()
-//         || col as usize >= board[0].len()
-//         || row < 0
-//         || col < 0
-//         || words[0] != board[row as usize][col as usize]
-//     {
-//         return false;
-//     }
+    if row as usize >= board.len()
+        || col as usize >= board[0].len()
+        || row < 0
+        || col < 0
+        || words[0] != board[row as usize][col as usize]
+    {
+        return false;
+    }
 
-//     board[row as usize][col as usize] = '*';
-//     let result = exists_helper(board, &words[1..], row + 1, col)
-//         || exists_helper(board, &words[1..], row - 1, col)
-//         || exists_helper(board, &words[1..], row, col + 1)
-//         || exists_helper(board, &words[1..], row, col - 1);
+    board[row as usize][col as usize] = '*';
+    let result = exists_helper(board, &words[1..], row + 1, col)
+        || exists_helper(board, &words[1..], row - 1, col)
+        || exists_helper(board, &words[1..], row, col + 1)
+        || exists_helper(board, &words[1..], row, col - 1);
 
-//     board[row as usize][col as usize] = words[0];
-//     result
-// }
+    board[row as usize][col as usize] = words[0];
+    result
+}
 
 // 6. thinking
 //     总结常见套路, 分类练习
