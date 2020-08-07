@@ -1,3 +1,4 @@
+mod best_time_to_buy_and_sell_stock;
 mod combination_sum_ii;
 mod find_the_duplicate_number;
 mod jump_game;
@@ -9,6 +10,7 @@ mod spiral_matrix;
 mod spiral_matrix_ii;
 mod word_search;
 
+pub use best_time_to_buy_and_sell_stock::max_profit;
 pub use combination_sum_ii::combination_sum2;
 pub use find_the_duplicate_number::find_duplicate;
 pub use jump_game::can_jump;
