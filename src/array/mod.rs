@@ -6,6 +6,7 @@ mod longest_substring_without_repeating_characters;
 mod merge_intervals;
 mod minimum_size_subarray_sum;
 mod minimum_window_substring;
+mod number_of_islands;
 mod rotate_image;
 mod set_matrix_zeros;
 mod sort_colors;
@@ -21,6 +22,7 @@ pub use longest_substring_without_repeating_characters::length_of_longest_substr
 pub use merge_intervals::merge;
 pub use minimum_size_subarray_sum::min_sub_array_len;
 pub use minimum_window_substring::min_window;
+pub use number_of_islands::num_islands;
 pub use rotate_image::rotate;
 pub use set_matrix_zeros::set_zeroes;
 pub use sort_colors::sort_colors;
