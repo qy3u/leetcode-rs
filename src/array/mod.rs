@@ -13,6 +13,7 @@ mod sort_colors;
 mod spiral_matrix;
 mod spiral_matrix_ii;
 mod word_search;
+mod find_minimum_in_rotated_sorted_array;
 
 pub use best_time_to_buy_and_sell_stock::max_profit;
 pub use combination_sum_ii::combination_sum2;
@@ -29,3 +30,4 @@ pub use sort_colors::sort_colors;
 pub use spiral_matrix::spiral_order;
 pub use spiral_matrix_ii::generate_matrix;
 pub use word_search::exist;
+pub use find_minimum_in_rotated_sorted_array::find_min;
