@@ -10,6 +10,7 @@ mod maximum_product_subarray;
 mod min_path_sum;
 mod unique_path;
 mod unique_path_ii;
+mod regular_expression_matching;
 
 pub use climbing_stairs::climb_stairs;
 pub use coin_change::coin_change;
@@ -23,6 +24,7 @@ pub use maximum_product_subarray::max_product;
 pub use min_path_sum::min_path_sum;
 pub use unique_path::unique_paths;
 pub use unique_path_ii::unique_paths_with_obstacles;
+pub use regular_expression_matching::is_match;
 
 // 1. 确定状态
 //  1) 最后一步
