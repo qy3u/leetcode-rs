@@ -1,3 +1,4 @@
+mod merge_k_sorted_lists;
 mod remove_duplicate_from_sorted_list_ii;
 mod remove_nth_node_from_end_of_list;
 mod rotate_list;
@@ -48,6 +49,7 @@ impl fmt::Display for ListNode {
     }
 }
 
+pub use merge_k_sorted_lists::merge_k_lists;
 pub use remove_duplicate_from_sorted_list_ii::delete_duplicates;
 pub use remove_nth_node_from_end_of_list::remove_nth_from_end;
 pub use rotate_list::rotate_right;
