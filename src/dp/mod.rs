@@ -1,3 +1,4 @@
+mod best_time_to_buy_and_sell_stock_ii;
 mod climbing_stairs;
 mod coin_change;
 mod counting_bits;
@@ -8,10 +9,11 @@ mod jump_game;
 mod longest_continuous_increasing_subsequence;
 mod maximum_product_subarray;
 mod min_path_sum;
+mod regular_expression_matching;
 mod unique_path;
 mod unique_path_ii;
-mod regular_expression_matching;
 
+pub use best_time_to_buy_and_sell_stock_ii::max_profit;
 pub use climbing_stairs::climb_stairs;
 pub use coin_change::coin_change;
 pub use counting_bits::count_bits;
@@ -22,9 +24,9 @@ pub use jump_game::can_jump;
 pub use longest_continuous_increasing_subsequence::find_length_of_lcis;
 pub use maximum_product_subarray::max_product;
 pub use min_path_sum::min_path_sum;
+pub use regular_expression_matching::is_match;
 pub use unique_path::unique_paths;
 pub use unique_path_ii::unique_paths_with_obstacles;
-pub use regular_expression_matching::is_match;
 
 // 1. 确定状态
 //  1) 最后一步
